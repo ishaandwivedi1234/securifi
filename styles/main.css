@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(68, 68, 68) !important;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0;
+}
+.search_header {
+  background-color: rgb(125, 106, 255);
+  padding: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: static;
+}
+.url_bar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+}
+input[type="text"],
+input[type="text"]:focus {
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1rem;
+  border: none;
+  box-shadow: 0px 0px 20px grey;
+}
+
+.nav_btns {
+  display: flex;
+  margin-top: 0.2rem;
+}
+.back_btn {
+  margin-right: 1rem;
+}
+.webview {
+  width: 100%;
+  height: 400vh;
+}

@@ -6,7 +6,12 @@ const { app, BrowserWindow, Menu, ipcMain } = electron;
 let mainWindow;
 
 app.on("ready", function () {
-  mainWindow = new BrowserWindow();
+  mainWindow = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true,
+      webviewTag: true,
+    },
+  });
 
   mainWindow.loadURL(
     url.format({
